@@ -1,0 +1,4 @@
+Hola món
+Aquest és el nostre fitxer de text nou
+i això és una línia nova
+I el fitxer s'ha creat.
