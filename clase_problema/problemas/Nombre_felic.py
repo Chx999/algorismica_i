@@ -31,10 +31,11 @@ def felic(num: int) -> bool:
     2.
     """
     a = []
-    while num not in a:
+    while num not in a:  # 如果num在可以在a列表被找到就说明重复了
         a.append(num)
-        num = sum([int(x) ** 2 for x in str(num)])
-
+        lista_digits = [int(x) ** 2 for x in str(num)]
+        print(lista_digits)
+        num = sum(lista_digits)
     return True if num == 1 else False
 
 
