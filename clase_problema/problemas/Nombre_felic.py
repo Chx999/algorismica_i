@@ -1,13 +1,15 @@
-def suma_digit(num: int) -> int:
+# def suma_digit(num: int) -> int:
+#    suma = 0
 #    while num != 1:
 #        for digit in str(num):
-#            suma = int(digit) ** 2
+#            print(digit)
+#            suma = suma + (int(digit) ** 2)
+#            print(suma)
 #            if suma == 4:
 #                return 0
 #            else:
 #                num = suma
 #    return 1
-
 
 
 def felic(num: int) -> bool:
@@ -28,10 +30,12 @@ def felic(num: int) -> bool:
     1.Usamos un for bucle para obtener la suma de los cualdrados de los digitos
     2.
     """
-    if suma_digit(num) == 1:
-        return True
-    else:
-        return False
+    a = []
+    while num not in a:
+        a.append(num)
+        num = sum([int(x) ** 2 for x in str(num)])
+
+    return True if num == 1 else False
 
 
 print(felic(203))
