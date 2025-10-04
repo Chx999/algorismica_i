@@ -14,8 +14,8 @@ def perfecte(nre: int) -> bool:
 
 
 def ambicios(num: int) -> bool:
-    number_got = [int(1)]
-    while num not in number_got:
+    number_got = [int(1)]  # 这里储存着每次计算完后的数字
+    while num not in number_got:  # 如果新计算出来的数字和前面储存的一样就跳出bucle
         number_got.append(num)
         divisor = [i for i in range(1, num) if num % i == 0]
         print(f"Divisores propios de {num} es {divisor}")
