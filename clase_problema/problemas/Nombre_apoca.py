@@ -51,6 +51,7 @@ def llista_apocaliptics(minim: int, maxim: int) -> list[int]:
 
 print(apocaliptic(157))
 print(llista_apocaliptics(100, 300))
+print(len(llista_apocaliptics(0, 5000)))
 # Una lista para guardar los num apocalipticos
 # Iteracion for del minimo al maximo
 # comprueba si el num es apocaliptico
